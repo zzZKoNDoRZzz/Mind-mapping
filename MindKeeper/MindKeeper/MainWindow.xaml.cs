@@ -23,7 +23,6 @@ namespace MindKeeper
         public MainWindow()
         {
             InitializeComponent();
-            fail lol
         }
     }
 }
