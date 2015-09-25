@@ -1,7 +1,6 @@
-﻿using System.Windows;
-
-namespace MindKeeper
+﻿namespace MindKeeper
 {
+    using System.Windows;
     /// <summary>
     /// Interaction logic for App.xaml
     /// </summary>
