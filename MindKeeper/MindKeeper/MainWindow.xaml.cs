@@ -1,6 +1,6 @@
-﻿using System.Windows;
-namespace MindKeeper
+﻿namespace MindKeeper
 {
+    using System.Windows;
     using System;
     using System.Collections.Generic;
     using System.Linq;
