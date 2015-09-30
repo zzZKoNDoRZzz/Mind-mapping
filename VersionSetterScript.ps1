@@ -12,4 +12,4 @@ $versionOld = "{0}.{1}.{2}" -f $matchVar1["major"],$matchVar1["minor"],$matchVar
 
 (Get-Content MindKeeper\Installer\MKInstaller.iss) | 
 Foreach-Object {$_ -replace $versionOld,$versionNew}  | 
-Out-File MindKeeper\Installer\MKInstaller.iss
+Out-File -Encoding UTF8 MindKeeper\Installer\MKInstaller.iss
