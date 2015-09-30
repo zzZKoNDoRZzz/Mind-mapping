@@ -3,7 +3,7 @@ branches:
     - master	
   configuration: Release
   
-  configuration: Debug
+  #configuration: Debug
 
 before_build:
 nuget restore MindKeeper\MindKeeper.sln
