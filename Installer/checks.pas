@@ -115,6 +115,6 @@ begin
 		end
 		else
 			result := false;		
-    end*) 
+    end *)
     result := true;
 end;
