@@ -31,9 +31,9 @@ Name: "ukrainian"; MessagesFile: "compiler:Languages\Ukrainian.isl"
 Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{cm:AdditionalIcons}"; Flags: unchecked
 
 [Files]
-Source: "MindKeeper\MindKeeper\bin\Debug\MindKeeper.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "MindKeeper\MindKeeper\bin\Debug\MindKeeper.exe.config"; DestDir: "{app}"; Flags: ignoreversion
-Source: "MindKeeper\MindKeeper\bin\Debug\MindKeeper.pdb"; DestDir: "{app}"; Flags: ignoreversion
+Source: "..\MindKeeper\bin\Debug\MindKeeper.exe"; DestDir: "{app}"; Flags: ignoreversion
+Source: "..\MindKeeper\bin\Debug\MindKeeper.exe.config"; DestDir: "{app}"; Flags: ignoreversion
+Source: "..\MindKeeper\bin\Debug\MindKeeper.pdb"; DestDir: "{app}"; Flags: ignoreversion
 ;Source: "MindKeeper\MindKeeper\bin\Debug\MindKeeper.vshost.exe"; DestDir: "{app}"; Flags: ignoreversion
 ;Source: "MindKeeper\MindKeeper\bin\Debug\MindKeeper.vshost.exe.config"; DestDir: "{app}"; Flags: ignoreversion
 ;Source: "MindKeeper\MindKeeper\bin\Debug\MindKeeper.vshost.exe.manifest"; DestDir: "{app}"; Flags: ignoreversion
