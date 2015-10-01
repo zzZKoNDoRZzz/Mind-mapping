@@ -1,6 +1,7 @@
 version: 0.0.0.{build}
 pull_requests:
   do_not_increment_build_number: true
+configuration: Release
 before_build:
 - ps: "nuget restore MindKeeper\\MindKeeper.sln\n\n$contentAssembly = Get-Content MindKeeper\\SharedAssemblyInfo.cs\n\"'\"+$contentAssembly+\"'\" -match '\\[assembly: AssemblyVersion\\(\\\"(?<major>\\d+).(?<minor>\\d+).(?<patch>\\d+).(\\*)\\\"\\)\\]'\n$matchVar = $matches\n$versionNew = \"{0}.{1}.{2}\" -f $matchVar[\"major\"],$matchVar[\"minor\"],$matchVar[\"patch\"]\n\n\n$contentInstaller = Get-Content MindKeeper\\Installer\\MKInstaller.iss\n\"'\"+$contentInstaller+\"'\" -match '\\#define MyAppVersion \\\"(?<major>\\d+).(?<minor>\\d+).(?<patch>\\d+)\\\"'\n$matchVar1 = $matches\n$versionOld = \"{0}.{1}.{2}\" -f $matchVar1[\"major\"],$matchVar1[\"minor\"],$matchVar1[\"patch\"]\n\n\n(Get-Content MindKeeper\\Installer\\MKInstaller.iss) | \nForeach-Object {$_ -replace $versionOld,$versionNew}  | \nOut-File -Encoding UTF8 MindKeeper\\Installer\\MKInstaller.iss"
 build:
