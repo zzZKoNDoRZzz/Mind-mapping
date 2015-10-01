@@ -21,5 +21,5 @@ deploy:
     secure: SEwZtPgWLNPbBAa/77JNUQ292JclH2sKs3qpYvj6kWGEiD/oJDz+Au8GfrvNK6LB
   on:
     branch: master
-    configure: Release
+    configuration: Release
     appveyor_repo_tag: true
