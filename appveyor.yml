@@ -16,7 +16,6 @@ deploy:
   release: MK-v0.0.0
   auth_token:
     secure: dxXnDldxYhUSIpOtmipHvoDe77ApzWSAgwlaxo0QWlA5ACBgb2OJNSLyFFTIIQGP
-  artifact: MindKeeper\Installer\MindKeeperInstall\
   on:
     branch: master
     configuration: Release
