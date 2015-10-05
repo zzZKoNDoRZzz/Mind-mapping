@@ -13,7 +13,7 @@ artifacts:
 - path: MindKeeper\Installer\MindKeeperInstall\
 deploy:
 - provider: GitHub
-  release: MK-v0.0.0
+  release: MK-v0.0.3
   auth_token:
     secure: dxXnDldxYhUSIpOtmipHvoDe77ApzWSAgwlaxo0QWlA5ACBgb2OJNSLyFFTIIQGP
   on:
