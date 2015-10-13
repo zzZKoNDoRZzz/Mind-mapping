@@ -76,6 +76,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="ViewModel\Base\DelegateCommand.cs" />
+    <Compile Include="ViewModel\Base\GeneralVM.cs" />
+    <Compile Include="ViewModel\Base\ViewModelBase.cs" />
     <Compile Include="VisualStylesDictionaries\WindowStyles.cs" />
     <Page Include="View\MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -150,9 +153,7 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="ViewModel\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Resource Include="Assets\Images\MKIco.ico" />
   </ItemGroup>
