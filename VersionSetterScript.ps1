@@ -11,7 +11,7 @@ $versionOld = "{0}.{1}.{2}" -f $matchVar1["major"],$matchVar1["minor"],$matchVar
 
 
 (Get-Content MindKeeper\Installer\MKInstaller.iss) | 
-Foreach-Object {$_ -replace $versionOld,$versionNew}  | ;
+Foreach-Object {$_ -replace $versionOld,$versionNew}  |
 Out-File -Encoding UTF8 MindKeeper\Installer\MKInstaller.iss
 
 $contentCI = Get-Content MindKeeper\Installer\MKInstaller.iss
@@ -19,6 +19,6 @@ $contentCI = Get-Content MindKeeper\Installer\MKInstaller.iss
 $matchVar2 = $matches
 $versionOldCI = "{0}.{1}.{2}" -f $matchVar2["major"],$matchVar2["minor"],$matchVar2["patch"]
 
-(Get-Content appvyor.yml) | 
-Foreach-Object {$_ -replace $versionOldCI,$versionNew} | ;
+(Get-Content appveyor.yml) | 
+Foreach-Object {$_ -replace $versionOldCI,$versionNew} |
 Out-File -Encoding UTF8 appvyor.yml
